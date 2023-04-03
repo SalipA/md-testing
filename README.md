@@ -25,14 +25,14 @@ _____
 _____
 ### About Stack
 Technologies were used:
-+ Java, version 11;
-+ Spring Boot;
-+ Maven;
-+ Git;
-+ Lombok;
-+ Logbook;
-+ H2 Database;
-+ Postman;
++ Java, version 11
++ Spring Boot
++ Maven
++ Git
++ Lombok
++ Logbook
++ H2 Database
++ Postman
 _____
 
 ### About Functionality
@@ -44,39 +44,39 @@ _____
   other contributors: [Polina Shmargunova](https://github.com/PolinaShmargunova) *(delete by id for Films and Users)*; [Anastasiya Salip](https://github.com/SalipA)*(core for Reviews)* 
 
   supports: Users, Films, Genres, Ratings, Reviews, Directors
-   + create;
-   + update;
-   + get all;
-   + get by id;
-   + delete by id;
+   + create
+   + update
+   + get all
+   + get by id
+   + delete by id
 + **Additional  Functionality**
   + **Friendship functionality**
   
     main contributor: [Andrei Sheryshov](https://github.com/a-sheryshov)
   
     supports: Users
-    + add friends;
-    + delete friends;
-    + get list of friends;
-    + get list of common friends with another user;
+    + add friends
+    + delete friends
+    + get list of friends
+    + get list of common friends with another user
 
   + **Like functionality**
   
     main contributor: [Andrei Sheryshov](https://github.com/a-sheryshov)
   
     supports: Films
-    + add like;
-    + delete like;
-    + get list of popular(most liked) films;
+    + add like
+    + delete like
+    + get list of popular(most liked) films
 
   + **Review and Grade functionality**
   
     main contributor: [Anastasiya Salip](https://github.com/SalipA)
   
     supports: Reviews
-    + get list of reviews by film id sorted by users grades;
-    + add grade (like or dislike);
-    + delete grade (like or dislike);
+    + get list of reviews by film id sorted by users grades
+    + add grade (like or dislike)
+    + delete grade (like or dislike)
   
   + **Search functionality**
     
@@ -90,7 +90,7 @@ _____
     main contributor: [Alexey Charushkin](https://github.com/Alexey-Charushkin)
     
     supports: Films
-    + get list of common popular(most liked) films for friends;
+    + get list of common popular(most liked) films for friends
   
   + **Recommendations functionality**
   
@@ -104,7 +104,7 @@ _____
     main contributor: [Ivan Rosokhach](https://github.com/IvanRosokhach)
   
     supports: Users
-    + get list of users event by user id;
+    + get list of users event by user id
     
   + **Other specific functionality**
   
@@ -112,13 +112,13 @@ _____
   
     supports: Films
       
-      + get list of popular(most liked) films *filtered by genre and year of release*;
+      + get list of popular(most liked) films *filtered by genre and year of release*
     
     main contributor: [Andrei Sheryshov](https://github.com/a-sheryshov)
 
     supports: Films
   
-      + get list of films *filtered by director* and sorted by popular(most liked) or year of release;
+      + get list of films *filtered by director* and sorted by popular(most liked) or year of release
 
   
 <span style="color:red">
@@ -127,53 +127,8 @@ _____
 ____
 
 ### About Endpoints and GSON-Objects
-| Functionality    | Method | Endpoints                                                  |
-|------------------|--------|------------------------------------------------------------|
-| Core             | POST   | /users                                                     | 
-| Core             | POST   | /films                                                     | 
-| Core             | POST   | /reviews                                                   |
-| Core             | POST   | /directors                                                 |
-| Core             | GET    | /directors                                                 |
-| Core             | GET    | /users                                                     |
-| Core             | GET    | /films                                                     |
-| Core             | GET    | /genres                                                    |
-| Core             | GET    | /mpa                                                       |
-| Core             | GET    | /reviews                                                   |
-| Core             | GET    | /genres/{id}                                               |
-| Core             | GET    | /users/{id}                                                |
-| Core             | GET    | /films/{id}                                                |
-| Core             | GET    | /mpa/{id}                                                  |
-| Core             | GET    | /directors/{id}                                            |
-| Core             | GET    | /reviews/{id}                                              |
-| Core             | PUT    | /directors                                                 |
-| Core             | PUT    | /films                                                     |
-| Core             | PUT    | /users                                                     |
-| Core             | PUT    | /reviews                                                   |
-| Core             | DELETE | /directors/{id}                                            |
-| Core             | DELETE | /users/{id}                                                |
-| Core             | DELETE | /films/{id}                                                |
-| Core             | DELETE | /reviews/{id}                                              |
-| Friendship       | PUT    | /users/{id}/friends/{friendId}                             |
-| Friendship       | DELETE | /users/{id}/friends/{friendId}                             |
-| Friendship       | GET    | /users/{id}/friends                                        |
-| Friendship       | GET    | /users/{id}/friends/common/{otherId}                       |
-| Like             | PUT    | /films/{id}/like/{userId}                                  |
-| Like             | DELETE | /films/{id}/like/{userId}                                  |
-| Like             | GET    | /films/popular?count={count}                               |
-| Feed             | GET    | /users/{id}/feed                                           |
-| Review and Grade | GET    | /reviews?filmId={filmId}&count={count}                     |
-| Review and Grade | PUT    | /reviews/{id}/like/{userId}                                |
-| Review and Grade | PUT    | /reviews/{id}/dislike/{userId}                             |
-| Review and Grade | DELETE | /reviews/{id}/like/{userId}                                |
-| Review and Grade | DELETE | /reviews/{id}/dislike/{userId}                             |
-| Common films     | GET    | /films/common?userId={userId}&friendId={friendId}          |
-| Search           | GET    | /films/search?query={search}&by=director,title             |
-| Recommendations  | GET    | /users/{id}/recommendations                                |
-| Other specific   | GET    | /films/popular?count={limit}&genreId={genreId}&year={year} |
-| Other specific   | GET    | /films/director/{directorId}?sortBy=[year,likes]           |
- 
 
-**Learn more information about endpoints and provided JSON - objects in our project documentation.**
+Learn more information about [endpoints](api.md) and provided JSON - objects in our project documentation.
 
 ___
 ### About Entity-Relationship model
